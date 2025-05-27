@@ -8,7 +8,7 @@ pipe = pipeline(
     torch_dtype="bfloat16"  # or "float16" if bfloat16 unsupported
 )
 
-image = Image.open("example.jpg").convert("RGB")
+image = Image.open("99.jpg").convert("RGB")
 prompt = "describe the image with its objects and their relation and relative location"
 
 result = pipe(image, prompt)
